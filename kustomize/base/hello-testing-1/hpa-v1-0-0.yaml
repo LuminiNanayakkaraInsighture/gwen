@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  annotations:
+    reloader.stakater.com/auto: 'true'
+  labels:
+    organizationId: org_2ae217e1-d709-401d-94ae-f6d5cdb3ab42
+    projectId: project_cc309c08-2274-4b2a-924c-f25ab472174d
+    applicationId: app_6a6bbccb-e148-4c0c-9b6c-39afd4230d73
+    version: v1.0.0
+  name: hello-testing-1-v1-0-0
+spec:
+  jobTemplate:
+    metadata:
+      annotations: 'null'
+      labels:
+        organizationId: org_2ae217e1-d709-401d-94ae-f6d5cdb3ab42
+        projectId: project_cc309c08-2274-4b2a-924c-f25ab472174d
+        applicationId: app_6a6bbccb-e148-4c0c-9b6c-39afd4230d73
+        version: v1.0.0
+    spec:
+      template:
+        metadata:
+          labels:
+            organizationId: org_2ae217e1-d709-401d-94ae-f6d5cdb3ab42
+            projectId: project_cc309c08-2274-4b2a-924c-f25ab472174d
+            applicationId: app_6a6bbccb-e148-4c0c-9b6c-39afd4230d73
+            version: v1.0.0
